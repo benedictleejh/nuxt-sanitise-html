@@ -1,0 +1,34 @@
+{
+  // Use ESLint for formatting files via autofixing lint errors where possible
+  // Normal format-on-save is disabled to avoid interfering with this
+  "editor.formatOnSave": false,
+  "eslint.options": {
+    "flags": []
+  },
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[pug]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "pug",
+    "vue"
+  ]
+}
