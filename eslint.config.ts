@@ -20,5 +20,31 @@ export default createConfigForNuxt({
   }
 })
   .append(
-    // your custom flat config here...
+    {
+      rules: {
+        'import/order': [
+          'error',
+          {
+            'groups': [
+              'builtin',
+              'external',
+              'internal'
+            ],
+            'newlines-between': 'always',
+            'alphabetize': {
+              order: 'asc',
+              caseInsensitive: true
+            }
+          }
+        ]
+      }
+    },
+    {
+      files: [
+        '**/pages/**/*'
+      ],
+      rules: {
+        'vue/multi-word-component-names': 'off'
+      }
+    }
   )

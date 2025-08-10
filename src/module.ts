@@ -1,19 +1,27 @@
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 
-// Module options TypeScript interface definition
-export interface SanitiseHtmlOptions {}
+import type { SanitiseHtmlOptions } from './types/module'
+
+export * from './types/module'
 
 export default defineNuxtModule<SanitiseHtmlOptions>({
   meta: {
     name: '@benedictleejh/nuxt-sanitise-html',
     configKey: 'sanitiseHtml'
   },
-  // Default configuration options of the Nuxt module
-  defaults: {},
-  setup(_options, _nuxt) {
+
+  setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `pnpm prepack`
-    addPlugin(resolver.resolve('./runtime/app/plugins/plugin'))
+    if (options.profiles) {
+      nuxt.options.appConfig = {
+        ...nuxt.options.appConfig,
+        sanitiseHtml: {
+          profiles: options.profiles
+        }
+      }
+    }
+
+    addPlugin(resolver.resolve('./runtime/app/plugins/sanitiseHtml'))
   }
 })

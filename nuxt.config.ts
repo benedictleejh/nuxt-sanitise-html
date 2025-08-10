@@ -2,5 +2,13 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/test-utils'
-  ]
+  ],
+
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        exactOptionalPropertyTypes: true
+      }
+    }
+  }
 })
