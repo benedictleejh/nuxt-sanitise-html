@@ -33,6 +33,24 @@ export default defineAppConfig({
             }
           }
         }
-      } }
+      },
+
+      removeHeaderAndFooter: {
+        hooks: {
+          uponSanitizeElement: [
+            (node) => {
+              if (node.tagName === 'FOOTER') {
+                node.remove()
+              }
+            },
+            (node) => {
+              if (node.tagName === 'HEADER') {
+                node.remove()
+              }
+            }
+          ]
+        }
+      }
+    }
   }
 })

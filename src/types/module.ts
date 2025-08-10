@@ -11,7 +11,7 @@ type DOMPurifyConfig = Prettify<KeysToCamelCase<Config, '_'>>
 type AddHookParameters = OverloadParameters<typeof DOMPurify.addHook>
 type DOMPurifyHooks = {
   // Credit to https://stackoverflow.com/a/76700498
-  [key in AddHookParameters[0]]?: (AddHookParameters & [key, unknown])[1]
+  [key in AddHookParameters[0]]?: (AddHookParameters & [key, unknown])[1] | (AddHookParameters & [key, unknown])[1][]
 }
 
 type SanitiseHtmlProfiles = {

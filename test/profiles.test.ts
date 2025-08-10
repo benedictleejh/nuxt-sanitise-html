@@ -39,4 +39,12 @@ describe('ssr', async () => {
       expect(html).toMatch(`<h1>Hello</h1>World`)
     })
   })
+
+  describe('multiple hooks on 1 entry point', async () => {
+    it('should use all hooks', async () => {
+      const html = await $fetch('/multiple-hooks')
+
+      expect(html).toMatch(`<span>This should remain</span>`)
+    })
+  })
 })

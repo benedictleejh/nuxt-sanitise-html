@@ -26,9 +26,18 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     const dompurifyHooks = sanitisationProfile.hooks
 
     if (dompurifyHooks) {
-      // @ts-expect-error TypeScript cannot resolve overloads when the input is a union
-      // See https://github.com/microsoft/TypeScript/issues/14107 for details
-      Object.entries(dompurifyHooks).forEach(hook => dompurify.addHook(...hook))
+      Object.entries(dompurifyHooks).forEach(([entryPoint, hookOrHooks]) => {
+        if (Array.isArray(hookOrHooks)) {
+          // @ts-expect-error TypeScript cannot resolve overloads when the input is a union
+          // See https://github.com/microsoft/TypeScript/issues/14107 for details
+          hookOrHooks.forEach(hook => dompurify.addHook(entryPoint, hook))
+        }
+        else {
+          // @ts-expect-error TypeScript cannot resolve overloads when the input is a union
+          // See https://github.com/microsoft/TypeScript/issues/14107 for details
+          dompurify.addHook(entryPoint, hookOrHooks)
+        }
+      })
     }
 
     return dompurify.sanitize(binding.value, dompurifyConfig)
