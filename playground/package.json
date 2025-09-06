@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "my-module-playground",
+  "name": "@benedictleejh/nuxt-sanitise-html-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxt dev",
