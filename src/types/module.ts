@@ -37,7 +37,7 @@ declare module 'nuxt/schema' {
 
 declare module 'vue' {
   interface GlobalDirectives {
-    vSanitiseHtml: ObjectDirective<HTMLElement, HTMLElement>
+    vSanitiseHtml: ObjectDirective<HTMLElement, string | Node>
   }
 }
 

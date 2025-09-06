@@ -8,7 +8,7 @@ import { constantCase } from '../utils/variableCasing'
 export default defineNuxtPlugin(async (nuxtApp) => {
   const { sanitiseHtml } = useAppConfig()
 
-  const sanitiseBindingValueHtml = (binding: DirectiveBinding<HTMLElement>) => {
+  const sanitiseBindingValueHtml = (binding: DirectiveBinding<string | Node>) => {
     const profileName = binding.arg ?? 'default'
     const sanitisationProfile = sanitiseHtml?.profiles?.[profileName] ?? {}
 
@@ -38,11 +38,11 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     return dompurify.sanitize(binding.value, dompurifyConfig)
   }
 
-  const updateHostElement = (hostElement: HTMLElement, binding: DirectiveBinding<HTMLElement>) => {
+  const updateHostElement = (hostElement: HTMLElement, binding: DirectiveBinding<string | Node>) => {
     hostElement.innerHTML = sanitiseBindingValueHtml(binding)
   }
 
-  const sanitiseHtmlDirective: ObjectDirective<HTMLElement, HTMLElement> = {
+  const sanitiseHtmlDirective: ObjectDirective<HTMLElement, string | Node> = {
     created: updateHostElement,
 
     updated: updateHostElement,
@@ -52,5 +52,5 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     })
   }
 
-  nuxtApp.vueApp.directive<HTMLElement, HTMLElement>('sanitise-html', sanitiseHtmlDirective)
+  nuxtApp.vueApp.directive('sanitise-html', sanitiseHtmlDirective)
 })
