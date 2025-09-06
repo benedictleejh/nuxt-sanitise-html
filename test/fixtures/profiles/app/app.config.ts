@@ -15,6 +15,22 @@ const TEMPORARY_ATTRIBUTE = 'data-temp-href-target'
 export default defineAppConfig({
   sanitiseHtml: {
     profiles: {
+      onlyH1: {
+        config: {
+          allowedTags: [
+            'h1'
+          ]
+        }
+      },
+
+      default: {
+        config: {
+          allowedTags: [
+            'h1'
+          ]
+        }
+      },
+
       safeTargetBlank: {
         hooks: {
           beforeSanitizeAttributes: (node) => {

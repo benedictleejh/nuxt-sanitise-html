@@ -37,8 +37,8 @@
   "dependencies": {
     "@nuxt/kit": "^4.1.1",
     "change-case": "^5.4.4",
-    "dompurify": "^3.2.6",
-    "jsdom": "^26.1.0"
+    "isomorphic-dompurify": "^2.26.0",
+    "ts-pattern": "^5.8.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.3",

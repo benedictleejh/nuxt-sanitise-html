@@ -7,20 +7,12 @@ export * from './types/module'
 export default defineNuxtModule<SanitiseHtmlOptions>({
   meta: {
     name: '@benedictleejh/nuxt-sanitise-html',
-    configKey: 'sanitiseHtml'
+    configKey: 'sanitiseHtml',
+    version: '1.0.0'
   },
 
-  setup(options, nuxt) {
+  setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
-
-    if (options.profiles) {
-      nuxt.options.appConfig = {
-        ...nuxt.options.appConfig,
-        sanitiseHtml: {
-          profiles: options.profiles
-        }
-      }
-    }
 
     addPlugin(resolver.resolve('./runtime/app/plugins/sanitiseHtml'))
   }

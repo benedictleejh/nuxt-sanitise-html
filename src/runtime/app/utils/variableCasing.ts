@@ -6,13 +6,13 @@ import { constantCase as changeCaseConstant } from 'change-case/keys'
 type CamelCaseFrom<S extends string, Delimiter extends string> = CamelCaseFromHelper<S, Delimiter>
 
 type CamelCaseFromHelper<S extends string, Delimiter extends string, NotFirstToken extends boolean = false>
-    = NotFirstToken extends true
-      ? S extends `${infer P1}${Delimiter}${infer P2}`
-        ? `${Capitalize<Lowercase<P1>>}${CamelCaseFromHelper<P2, Delimiter, true>}`
-        : `${Capitalize<Lowercase<S>>}`
-      : S extends `${infer P1}${Delimiter}${infer P2}`
-        ? `${Lowercase<P1>}${CamelCaseFromHelper<P2, Delimiter, true>}`
-        : `${Lowercase<S>}`
+  = NotFirstToken extends true
+    ? S extends `${infer P1}${Delimiter}${infer P2}`
+      ? `${Capitalize<Lowercase<P1>>}${CamelCaseFromHelper<P2, Delimiter, true>}`
+      : `${Capitalize<Lowercase<S>>}`
+    : S extends `${infer P1}${Delimiter}${infer P2}`
+      ? `${Lowercase<P1>}${CamelCaseFromHelper<P2, Delimiter, true>}`
+      : `${Lowercase<S>}`
 
 /** Convert an object's keys to camel-case based on some delimiter */
 export type KeysToCamelCase<T, Delimiter extends string> = {
@@ -26,9 +26,9 @@ export type KeysToCamelCase<T, Delimiter extends string> = {
 
 /** Handles selecting keys from nested arrays */
 type KeysToCamelCaseForArrayElement<AElement, Delimiter extends string>
-    = AElement extends Array<infer BElement>
-      ? Array<KeysToCamelCaseForArrayElement<BElement, Delimiter>>
-      : Array<KeysToCamelCase<AElement, Delimiter>>
+  = AElement extends Array<infer BElement>
+    ? Array<KeysToCamelCaseForArrayElement<BElement, Delimiter>>
+    : Array<KeysToCamelCase<AElement, Delimiter>>
 
 export type CamelCaseFromKebabCase<S extends string> = CamelCaseFrom<S, '-'>
 export type CamelCaseFromSnakeCase<S extends string> = CamelCaseFrom<S, '_'>
@@ -49,9 +49,9 @@ export type KeysToConstantCase<T> = {
 }
 
 type KeysToConstantCaseForArrayElement<AElement>
-    = AElement extends Array<infer BElement>
-      ? Array<KeysToConstantCaseForArrayElement<BElement>>
-      : Array<KeysToConstantCase<AElement>>
+  = AElement extends Array<infer BElement>
+    ? Array<KeysToConstantCaseForArrayElement<BElement>>
+    : Array<KeysToConstantCase<AElement>>
 
 export const constantCase
   = <T>(object: T, depth?: number, options?: Options): KeysToConstantCase<T> =>

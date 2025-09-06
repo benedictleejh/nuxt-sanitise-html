@@ -8,3 +8,5 @@ declare global {
     entries<T extends object>(o: T): Entries<T>
   }
 }
+
+export {}
