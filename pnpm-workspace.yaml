@@ -1,3 +1,9 @@
+minimumReleaseAge: 10080
+
+minimumReleaseAgeExclude:
+  - nuxt
+  - '@nuxt/*'
+
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
