@@ -3,10 +3,10 @@ name: ci
 on:
   push:
     branches:
-      - master
+      - development
   pull_request:
     branches:
-      - master
+      - development
 
 jobs:
   lint:
@@ -17,9 +17,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
-      - run: npm i -g --force corepack@latest && corepack enable
+      - run: npm install --global --force corepack@latest && corepack enable
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -35,9 +35,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
-      - run: npm i -g --force corepack@latest && corepack enable
+      - run: npm install --global --force corepack@latest && corepack enable
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
