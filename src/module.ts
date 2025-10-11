@@ -1,14 +1,15 @@
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 
+import { name, version } from '../package.json'
 import type { SanitiseHtmlOptions } from './types/module'
 
 export * from './types/module'
 
 export default defineNuxtModule<SanitiseHtmlOptions>({
   meta: {
-    name: '@benedictleejh/nuxt-sanitise-html',
+    name,
     configKey: 'sanitiseHtml',
-    version: '1.0.0'
+    version
   },
 
   setup(_options, _nuxt) {
