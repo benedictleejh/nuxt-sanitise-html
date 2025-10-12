@@ -28,6 +28,26 @@ export type SanitiseHtmlProfiles = {
 export interface SanitiseHtmlOptions {}
 
 declare module 'nuxt/schema' {
+  interface AppConfigInput {
+    sanitiseHtml?: {
+      profiles?: SanitiseHtmlProfiles
+    }
+  }
+
+  interface AppConfig {
+    sanitiseHtml?: {
+      profiles?: SanitiseHtmlProfiles
+    }
+  }
+}
+
+declare module '@nuxt/schema' {
+  interface AppConfigInput {
+    sanitiseHtml?: {
+      profiles?: SanitiseHtmlProfiles
+    }
+  }
+
   interface AppConfig {
     sanitiseHtml?: {
       profiles?: SanitiseHtmlProfiles

@@ -3,6 +3,13 @@ minimumReleaseAge: 10080
 minimumReleaseAgeExclude:
   - nuxt
   - '@nuxt/*'
+  - oxc-parser
+  - '@oxc-parser/*'
+  - oxc-minify
+  - '@oxc-minify/*'
+  - oxc-transform
+  - '@oxc-transform/*'
+  - '@oxc-project/types'
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
