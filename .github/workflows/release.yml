@@ -48,3 +48,6 @@ jobs:
         run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebase development
+        run: git checkout development && git rebase main && git push origin development
