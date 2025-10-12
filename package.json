@@ -1,6 +1,6 @@
 {
   "name": "@benedictleejh/nuxt-sanitise-html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Nuxt module to sanitise HTML to protect against XSS attacks",
   "repository": "benedictleejh/nuxt-sanitise-html",
   "license": "MIT",
