@@ -5,6 +5,18 @@
   "repository": "benedictleejh/nuxt-sanitise-html",
   "license": "MIT",
   "type": "module",
+  "keywords": [
+    "nuxt",
+    "vue",
+    "vue-directive",
+    "dom",
+    "xss",
+    "html",
+    "dompurify",
+    "security",
+    "sanitize",
+    "sanitizer"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types.d.mts",
