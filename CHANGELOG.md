@@ -1,3 +1,23 @@
+## v1.0.3
+
+[compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.0.2...v1.0.3)
+
+### 🩹 Fixes
+
+- Use deploy key to checkout during release to allow for auto rebase ([6c04399](https://github.com/benedictleejh/nuxt-sanitise-html/commit/6c04399))
+
+### 🏡 Chore
+
+- **release:** V1.0.2 [skip ci] ([98b1d51](https://github.com/benedictleejh/nuxt-sanitise-html/commit/98b1d51))
+- **docs:** Update README ([4b0eb24](https://github.com/benedictleejh/nuxt-sanitise-html/commit/4b0eb24))
+- Update pnpm ([978e8d7](https://github.com/benedictleejh/nuxt-sanitise-html/commit/978e8d7))
+- Update dependencies ([eeebe19](https://github.com/benedictleejh/nuxt-sanitise-html/commit/eeebe19))
+- Update keywords ([4f7c717](https://github.com/benedictleejh/nuxt-sanitise-html/commit/4f7c717))
+
+### ❤️ Contributors
+
+- Benedict Lee ([@benedictleejh](https://github.com/benedictleejh))
+
 ## v1.0.2
 
 [compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.0.0...v1.0.2)
