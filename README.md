@@ -166,6 +166,9 @@ export default defineAppConfig({
 
 ## Contribution
 
+This repo follows [GitLab Flow](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/) as a branching
+model. All PRs should be made against `development` and not `main`.
+
 <details>
   <summary>Local development</summary>
   
@@ -206,5 +209,5 @@ export default defineAppConfig({
 [license-src]: https://img.shields.io/npm/l/@benedictleejh/nuxt-sanitise-html.svg?style=flat&colorA=020420&colorB=00DC82
 [license-href]: https://npmjs.com/package/@benedictleejh/nuxt-sanitise-html
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
+[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt
 [nuxt-href]: https://nuxt.com
