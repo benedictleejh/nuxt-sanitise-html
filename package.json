@@ -5,6 +5,18 @@
   "repository": "benedictleejh/nuxt-sanitise-html",
   "license": "MIT",
   "type": "module",
+  "keywords": [
+    "nuxt",
+    "vue",
+    "vue-directive",
+    "dom",
+    "xss",
+    "html",
+    "dompurify",
+    "security",
+    "sanitize",
+    "sanitizer"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types.d.mts",
@@ -35,28 +47,28 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.1.3",
+    "@nuxt/kit": "^4.2.1",
     "change-case": "^5.4.4",
-    "isomorphic-dompurify": "^2.28.0",
-    "ts-pattern": "^5.8.0"
+    "isomorphic-dompurify": "^2.31.0",
+    "ts-pattern": "^5.9.0"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.6.5",
-    "@nuxt/eslint-config": "^1.9.0",
+    "@nuxt/devtools": "^3.1.0",
+    "@nuxt/eslint-config": "^1.10.0",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.1.3",
-    "@nuxt/test-utils": "^3.19.2",
+    "@nuxt/schema": "^4.2.1",
+    "@nuxt/test-utils": "^3.20.1",
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "eslint": "^9.37.0",
+    "eslint": "^9.39.1",
     "husky": "^9.1.7",
     "jiti": "^2.6.1",
-    "lint-staged": "^16.2.3",
-    "nuxt": "^4.1.3",
+    "lint-staged": "^16.2.6",
+    "nuxt": "^4.2.1",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
-    "vue": "^3.5.22",
-    "vue-tsc": "^3.1.0"
+    "vue": "^3.5.24",
+    "vue-tsc": "^3.1.3"
   },
-  "packageManager": "pnpm@10.18.2+sha512.9fb969fa749b3ade6035e0f109f0b8a60b5d08a1a87fdf72e337da90dcc93336e2280ca4e44f2358a649b83c17959e9993e777c2080879f3801e6f0d999ad3dd"
+  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
 }
