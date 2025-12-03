@@ -47,7 +47,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.2.1",
+    "@nuxt/kit": "^4.0.0",
     "change-case": "^5.4.4",
     "isomorphic-dompurify": "^2.31.0",
     "ts-pattern": "^5.9.0"
