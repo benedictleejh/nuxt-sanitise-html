@@ -1,3 +1,22 @@
+## v1.1.0
+
+[compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.0.3...v1.1.0)
+
+### 🚀 Enhancements
+
+- Relax @nuxt/kit dependency range ([930ac4d](https://github.com/benedictleejh/nuxt-sanitise-html/commit/930ac4d))
+
+### 🏡 Chore
+
+- **release:** V1.0.3 [skip ci] ([03dde15](https://github.com/benedictleejh/nuxt-sanitise-html/commit/03dde15))
+- Harden install behaviour ([80d8ff4](https://github.com/benedictleejh/nuxt-sanitise-html/commit/80d8ff4))
+- Move pnpm setting from .npmrc to pnpm-workspace.yaml ([6d09464](https://github.com/benedictleejh/nuxt-sanitise-html/commit/6d09464))
+- Update pnpm ([a453c15](https://github.com/benedictleejh/nuxt-sanitise-html/commit/a453c15))
+
+### ❤️ Contributors
+
+- Benedict Lee ([@benedictleejh](https://github.com/benedictleejh))
+
 ## v1.0.3
 
 [compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.0.2...v1.0.3)
