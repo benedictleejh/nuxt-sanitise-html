@@ -1,5 +1,5 @@
-import type DOMPurify from 'isomorphic-dompurify'
-import type { Config } from 'isomorphic-dompurify'
+import type DOMPurify from 'dompurify'
+import type { Config } from 'dompurify'
 import type { ObjectDirective } from 'vue'
 
 import type { KeysToCamelCase } from '../runtime/app/utils/variableCasing'
