@@ -1,4 +1,4 @@
-import dompurify from 'isomorphic-dompurify'
+import createDompurify from 'dompurify'
 import { match, P } from 'ts-pattern'
 import type { DirectiveBinding, ObjectDirective } from 'vue'
 
@@ -7,6 +7,9 @@ import { constantCase } from '../utils/variableCasing'
 
 export default defineNuxtPlugin(async (nuxtApp) => {
   const { sanitiseHtml } = useAppConfig()
+  const dompurify = import.meta.server
+    ? createDompurify(new (await import('jsdom')).JSDOM('').window)
+    : createDompurify()
 
   const sanitiseBindingValueHtml = (binding: DirectiveBinding<string | Node>) => {
     const profileName = binding.arg ?? 'default'
