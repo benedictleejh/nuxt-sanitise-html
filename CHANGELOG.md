@@ -1,3 +1,30 @@
+## v1.1.2
+
+[compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.1.0...v1.1.2)
+
+### 🩹 Fixes
+
+- Replace isomorphic-dompurify with dompurify and jsdom ([ed341f0](https://github.com/benedictleejh/nuxt-sanitise-html/commit/ed341f0))
+
+### 📦 Build
+
+- Ignore build scripts ([22bb52c](https://github.com/benedictleejh/nuxt-sanitise-html/commit/22bb52c))
+
+### 🏡 Chore
+
+- **release:** V1.1.0 [skip ci] ([1501afe](https://github.com/benedictleejh/nuxt-sanitise-html/commit/1501afe))
+- Update pnpm ([6d3641d](https://github.com/benedictleejh/nuxt-sanitise-html/commit/6d3641d))
+- Update dependencies ([0116051](https://github.com/benedictleejh/nuxt-sanitise-html/commit/0116051))
+
+### 🤖 CI
+
+- Skip git checks on pipeline release ([ad09387](https://github.com/benedictleejh/nuxt-sanitise-html/commit/ad09387))
+- Skip v1.1.1 due to github not being able to create a deleted tag with the same label ([51685a9](https://github.com/benedictleejh/nuxt-sanitise-html/commit/51685a9))
+
+### ❤️ Contributors
+
+- Benedict Lee ([@benedictleejh](https://github.com/benedictleejh))
+
 ## v1.1.0
 
 [compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.0.3...v1.1.0)
