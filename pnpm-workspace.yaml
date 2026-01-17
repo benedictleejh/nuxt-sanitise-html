@@ -1,3 +1,6 @@
 minimumReleaseAge: 10080
 
 strictPeerDependencies: false
+
+allowBuilds:
+  esbuild: false
