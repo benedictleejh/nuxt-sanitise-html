@@ -1,3 +1,21 @@
+## v1.1.3
+
+[compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.1.2...v1.1.3)
+
+### 🏡 Chore
+
+- **release:** V1.1.2 [skip ci] ([f616141](https://github.com/benedictleejh/nuxt-sanitise-html/commit/f616141))
+- Update pnpm ([6356fa5](https://github.com/benedictleejh/nuxt-sanitise-html/commit/6356fa5))
+- Migrate to new module playground setup ([a7fbd6e](https://github.com/benedictleejh/nuxt-sanitise-html/commit/a7fbd6e))
+
+### 🤖 CI
+
+- Fix updating of npm in release pipeline ([ec7bb36](https://github.com/benedictleejh/nuxt-sanitise-html/commit/ec7bb36))
+
+### ❤️ Contributors
+
+- Benedict Lee ([@benedictleejh](https://github.com/benedictleejh))
+
 ## v1.1.2
 
 [compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.1.0...v1.1.2)
