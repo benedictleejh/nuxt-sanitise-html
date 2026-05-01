@@ -33,6 +33,10 @@ jobs:
           cache: pnpm
           registry-url: 'https://registry.npmjs.org'
 
+      # Workaround for https://github.com/nodejs/node/issues/62425
+      - name: pre-update npm
+        run: npm install -g npm@10.9.8
+
       - name: Update npm
         run: npm install -g npm@latest
 
