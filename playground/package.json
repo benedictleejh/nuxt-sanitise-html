@@ -8,6 +8,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^4.0.1"
+    "nuxt": "^4.0.1",
+    "@benedictleejh/nuxt-sanitise-html": "workspace:*"
   }
 }

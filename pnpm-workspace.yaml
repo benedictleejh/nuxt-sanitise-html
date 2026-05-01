@@ -1,3 +1,6 @@
+packages:
+  - playground
+
 minimumReleaseAge: 10080
 
 strictPeerDependencies: false

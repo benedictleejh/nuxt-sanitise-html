@@ -1,4 +1,4 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
+  modules: ['@benedictleejh/nuxt-sanitise-html'],
   devtools: { enabled: true }
 })
