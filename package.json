@@ -49,28 +49,28 @@
   "dependencies": {
     "@nuxt/kit": "^4.0.0",
     "change-case": "^5.4.4",
-    "dompurify": "^3.4.1",
+    "dompurify": "^3.4.12",
     "jsdom": "^29.0.0",
     "ts-pattern": "^5.9.0"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^3.2.4",
-    "@nuxt/eslint-config": "^1.15.2",
-    "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.4.2",
-    "@nuxt/test-utils": "^4.0.2",
+    "@nuxt/devtools": "^3.3.1",
+    "@nuxt/eslint-config": "^1.16.0",
+    "@nuxt/module-builder": "^1.0.3",
+    "@nuxt/schema": "^4.5.0",
+    "@nuxt/test-utils": "^4.0.3",
     "@types/node": "latest",
-    "@types/jsdom": "^28.0.1",
+    "@types/jsdom": "^28.0.3",
     "changelogen": "^0.6.2",
-    "eslint": "^10.2.1",
+    "eslint": "^10.8.0",
     "husky": "^9.1.7",
-    "jiti": "^2.6.1",
-    "lint-staged": "^16.4.0",
-    "nuxt": "^4.2.2",
+    "jiti": "^2.7.0",
+    "lint-staged": "^17.2.0",
+    "nuxt": "^4.5.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.5",
-    "vue": "^3.5.33",
-    "vue-tsc": "^3.2.7"
+    "vitest": "^4.1.10",
+    "vue": "^3.5.40",
+    "vue-tsc": "^3.3.8"
   },
-  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8"
+  "packageManager": "pnpm@11.19.0+sha512.7881f3ed590d472c4a955e2b88b2121791116066dcc88cbca3849ec9b60f1bbaa6d2ccb221fa91da4e1c65bef2bcbe379365aea7ac539c7bf86dedc3a1b22dce"
 }
