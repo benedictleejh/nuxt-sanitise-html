@@ -1,3 +1,11 @@
+## v1.1.5
+
+[compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.1.4...v1.1.5)
+
+### 🏡 Chore
+
+- **release:** V1.1.4 [skip ci] ([5a368cf](https://github.com/benedictleejh/nuxt-sanitise-html/commit/5a368cf))
+
 ## v1.1.4
 
 [compare changes](https://github.com/benedictleejh/nuxt-sanitise-html/compare/v1.1.3...v1.1.4)
