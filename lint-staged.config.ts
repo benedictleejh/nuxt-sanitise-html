@@ -1,6 +1,6 @@
-import type { Configuration } from 'lint-staged'
+import { defineConfig as defineLintStagedConfig } from 'lint-staged/config'
 
-export default {
+export default defineLintStagedConfig({
   '*.{ts,tsx,js,jsx,vue}': stagedFiles => [
     `pnpm lint ${stagedFiles.join(' ')}`
   ],
@@ -10,4 +10,4 @@ export default {
   '*.{*,2}': () => [
     'pnpm test'
   ]
-} satisfies Configuration
+})
